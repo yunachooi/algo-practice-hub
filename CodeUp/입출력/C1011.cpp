@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 main(){
-	float a;
+	char a;
 	
-	scanf("%f", &a); // 실수 입력 
-	printf("%f", a);
+	scanf("%c", &a); // 문자 입력 
+	printf("%c", a);
 	
 	return 0;
 }
