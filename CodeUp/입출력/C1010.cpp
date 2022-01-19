@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 main(){
-	char a;
+	int a;
 	
-	scanf("%c", &a); // 문자 입력 
-	printf("%c", a);
+	scanf("%d", &a); // 정수 압력 
+	printf("%d", a);
 	
 	return 0;
 }
