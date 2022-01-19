@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 main(){
-	int a;
+	float a;
 	
-	scanf("%d",&a); 
-	printf("%d %d %d", a, a, a);
+	scanf("%f", &a);
+	printf("%.2f", a); // 소수 둘째자리까지  
 	
 	return 0;
 }
