@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 main(){
-	int a, b;
+	float a;
 	
-	scanf("%d %d", &a, &b);
-	printf("%d %d", a, b);
+	scanf("%f", &a); // 실수 입력 
+	printf("%f", a);
 	
 	return 0;
 }
