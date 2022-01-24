@@ -5,7 +5,7 @@ int main() {
 
     scanf("%d", &n);
 
-    printf("%x", n; // 16진수(hexadecimal) 소문자
+    printf("%x", n); // 16진수(hexadecimal) 소문자
 
     return 0;
 }
