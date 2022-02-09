@@ -6,16 +6,16 @@ int main() {
     scanf("%d", &a);
 
     if(a < 0){
-        printf("%s\n", "minus"); // 음
+        printf("minus\n"); // 음
         if(a % 2 == 0)
-            printf("%s\n", "even"); // 짝
-        else printf("%s\n", "odd"); // 홀
+            printf("even\n"); // 짝
+        else printf("odd\n"); // 홀
     }
     else{
-        printf("%s\n", "plus"); // 양
+        printf("plus\n"); // 양
         if(a % 2 == 0)
-            printf("%s\n", "even"); // 짝
-        else printf("%s\n", "odd"); // 홀
+            printf("even\n"); // 짝
+        else printf("odd\n"); // 홀
     }
 
     return 0;
