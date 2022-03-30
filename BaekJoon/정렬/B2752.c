@@ -5,7 +5,7 @@ int main(){
   int max, min, mid;
   scanf("%d %d %d", &a, &b, &c);
     
-  max = (a > b) ? a : b; // »ïÇ×¿¬»êÀÚ Á¶°Ç ? ½Ä1 : ½Ä2
+  max = (a > b) ? a : b; // ì‚¼í•­ ì—°ì‚°ìž = (ì¡°ê±´) ? True ì¼ë•Œ ì‹ : False ì¼ë•Œ ì‹ ;
   max = (max > c) ? max : c;
 
   min = (a < b) ? a : b;
