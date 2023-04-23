@@ -15,4 +15,5 @@ for i in range(n):
 if d[m] == 10001:
     print(-1)
 else:
-    print(d[m])
+    print(d[m])  
+
