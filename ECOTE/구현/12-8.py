@@ -26,4 +26,4 @@ def solution(n, weak, dist):
             
     if answer > len(dist):
         return -1
-    return 
+    return answer
