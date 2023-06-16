@@ -21,7 +21,7 @@ def solution(words, queries):
         array[i].sort()
         reversed_array[i].sort()
 
-    for q in queries:
+    for q in queries: 
         if q[0] != '?':
             res = count_by_range(array[len(q)], q.replace('?', 'a'), q.replace('?', 'z'))
         else:
