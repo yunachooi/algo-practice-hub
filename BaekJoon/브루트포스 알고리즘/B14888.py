@@ -1,39 +1,36 @@
-n = int(input())
-data = list(map(int, input().split()))
-add, sub, mul, div = map(int, input().split())
+import sys
+N = int(sys.stdin.readline())
+num = list(map(int, sys.stdin.readline().split()))
+operators = list(map(int, sys.stdin.readline().split()))
 
-min_value = 1e9
-max_value = -1e9
+def plus(a, b):
+    return a + b 
+def minus(a, b):
+    return a - b 
+def mul(a, b):
+    return a * b 
+def div(a, b):
+    if a < 0:
+        return -(-a // b)
+    return a // b
 
-def dfs(i, now):
-    global min_value, max_value, add, sub, mul, div
+ops = [plus, minus, mul, div]
+min_result = 1000000000
+max_result = -1000000000
+def dfs(idx, result):
+    global min_result, max_result
 
-    if i == n:
-        min_value = min(min_value, now)
-        max_value = max(max_value, now)
+    if idx == N:
+        min_result = min(min_result, result)
+        max_result = max(max_result, result)
+        return
+    
+    for i in range(4):
+        if operators[i]:
+            operators[i] -= 1
+            dfs(idx+1, ops[i](result, num[idx]))
+            operators[i] += 1
 
-    else:
-        if add > 0:
-            add -= 1
-            dfs(i + 1, now + data[i])
-            add += 1
-
-        if sub > 0:
-            sub -= 1
-            dfs(i + 1, now - data[i])
-            sub += 1
-
-        if mul > 0:
-            mul -= 1
-            dfs(i + 1, now * data[i])
-            mul += 1
-
-        if div > 0:
-            div -= 1
-            dfs(i + 1, int(now / data[i]))
-            div += 1
-
-dfs(1, data[0])
-
-print(max_value)
-print(min_value)
+dfs(1, num[0])
+print(max_result)
+print(min_result)
