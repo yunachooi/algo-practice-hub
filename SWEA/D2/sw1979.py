@@ -33,4 +33,4 @@ for t in range(1, T + 1):
         if tmp == k:
             res += 1
 
-    print(f'#{t} {res}')
+    print('#{} {}'.format(t, res))
