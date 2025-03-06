@@ -1,4 +1,4 @@
-# AlgorithmStudy
+# Algorithm Study
 > 알고리즘 공부 <br>
 
 <br> 📌 available language <br>
