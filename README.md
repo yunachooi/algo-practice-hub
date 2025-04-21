@@ -1,4 +1,4 @@
-# Algorithm Study
+# algo-practice-hub
 > 알고리즘 및 자료구조 학습을 위한 스터디 공간입니다. <br>
 C언어, Java, Python을 활용하여 백준 및 프로그래머스 문제를 풀이합니다.
 
